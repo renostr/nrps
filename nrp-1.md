@@ -49,7 +49,7 @@ Event ::
 
 Id :: [Byte ^ 32]     -- indicates fixed-size byte string of exactly 32 bytes
 Pubkey :: [Byte ^ 32]
-Timestamp :: U32 -- indicates 32-bit unsigned integer
+Timestamp :: I64 -- indicates 64-bit signed integer
 Kind :: U64 -- indicates 64-bit unsigned integer
 OtsHash :: [Byte ^ 32]
 
