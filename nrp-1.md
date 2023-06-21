@@ -6,7 +6,7 @@ Binary event encoding
 
 `draft` `optional` `author:dr-orlovsky`
 
-At the present moment nostr (NIP-1) uses text serialization of the event data,
+At the present moment nostr ([NIP-1]) uses text serialization of the event data,
 represented in a form of a JSON object. While being simple-to-implement and
 web-compatible, it has some significant drawbacks:
 
@@ -109,8 +109,8 @@ Backward compatibility
 
 Clients and relays not supporting the current proposal must ignore the events.
 
-Clients and relays supporting the proposal must provide a NIP-1 &
-NIP-3-compatible JSON encodings of the binary data for the legacy (pre-NIP-88)
+Clients and relays supporting the proposal must provide a [NIP-1] &
+[NIP-3]-compatible JSON encodings of the binary data for the legacy (pre-[NIP-88])
 clients and relay, where:
 * `content` is given in the Base64 encoding;
 * `ots` is given in the Base64 encoding;
@@ -122,6 +122,9 @@ The proposal is not compatible with the current nostr protocol and requires a
 binary protocol, which will be described in a dedicated NIP.
 
 
+[NIP-1]: https://github.com/nostr-protocol/nips/blob/master/01.md
+[NIP-3]: https://github.com/nostr-protocol/nips/blob/master/03.md
+[NIP-88]: https://github.com/nostr-protocol/nips/pull/512
 [Damus app]: https://nostrexplorer.com/e/9d89ef468ec690f2177635b8c0fd589aca840de1a749a08a44de5b148654bb49
 [Nostr creator]: https://github.com/nostr-protocol/nips/blob/44ea6d84583b64f6d7d994bfb480a4d786ba1699/93.md
 [strict type]: https://github.com/strict-types/strict-types
