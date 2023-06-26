@@ -61,6 +61,7 @@ TagName :: [AsciiPrintable ^ 1..0xFF] -- indicates string from 1 to 255 chars
 TagData :: [Entry ^ 0..0xFF]
 Entry :: [Byte ^ 1..0xFF]     -- inticates non-empty byte string up to 255 bytes
 
+-- FIXME: allow multiple files in content
 Content :: [Byte ^ 0..0xFFFFFF] -- inticates byte string up to 2^24 bytes
 Signature :: [Byte ^ 64] -- indicates Shnorr signature
 
